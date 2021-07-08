@@ -25,21 +25,46 @@ nav a {
     text-decoration: none;
 }
 
-.container {
+a {
+    padding: 10px;
+}
+.item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5% 15% 5% 15%;
+    text-align: left;
+}
+
+.item2 a{
+    background-color: #E9FFF9;
+    width:120px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.container1 {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding-top: 2%;;
+}
+
+.container2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-.container .item {
+.container2 .item {
     height: 200px;
     width: 200px;
     margin: 25px;
     background: lightgray
-}
-
-.gallery{
-
 }
 
 .footerDiv{
@@ -55,7 +80,7 @@ nav a {
 
 .footerDiv a{
     background-color: #E9FFF9;
-    width:100px;
+    width:180px;
     height: 40px;
     text-align: center;
     text-decoration: none;
