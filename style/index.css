@@ -1,7 +1,16 @@
 /* Add CSS styling here */
 * {
-    border: 1px solid black;
     box-sizing: border-box;
+}
+
+h1 {
+    color:white;
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+}
+h1:hover {
+    text-transform: uppercase;
+    animation-delay: .3s;
 }
 
 .headerDiv {
@@ -13,6 +22,8 @@
     padding: 25px;
 }
 
+
+
 nav {
     display: flex;
     flex-wrap: nowrap;
@@ -23,41 +34,59 @@ nav a {
     height: 40px;
     text-align: center;
     text-decoration: none;
+    border: 1px solid #9ED8DB;
 }
 
 a {
     padding: 10px;
 }
+
+nav a:hover {
+    background-color: #467599;
+    animation-delay: .3s;
+    color: white;
+}
+
 .item2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 5% 15% 5% 15%;
+    padding: 5% 5% 5% 5%;
     text-align: left;
+    width: 50%;
 }
 
-.item2 a{
-    background-color: #E9FFF9;
-    width:120px;
-    height: 40px;
-    text-align: center;
-    text-decoration: none;
-
+.container1 .item {
+    width: 50%;
+    overflow: hidden;
 }
+
+
 
 .container1 {
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content:space-evenly;
     text-align: center;
-    padding-top: 2%;;
+    padding-top: 2%;
 }
 
+
+img:hover {
+    filter: grayscale(100%);
+    animation-delay: .5s;
+
+}
 .container2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: space-evenly;
+    align-content:space-evenly;
+    margin-bottom: 2%;
 }
 
 .container2 .item {
@@ -76,12 +105,162 @@ a {
     padding: 25px;
     align-items: center;
     justify-content: center;
+    color:white;
+}
+h2{
+    text-shadow: 1px 1px gray;
 }
 
-.footerDiv a{
+.footerButton{
     background-color: #E9FFF9;
-    width:180px;
+    width:160px;
     height: 40px;
     text-align: center;
     text-decoration: none;
 }
+
+.socialIcons{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.aboutPage{
+    background: url(https://images.unsplash.com/photo-1542385939-cac37e190818?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80);
+    height: 18vh;
+    background-position: 0% 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content:space-evenly;
+    text-align: center;
+}
+.aboutButton{
+    background-color: #9ED8DB;
+    width: 250px;
+}
+
+.altHeader{
+    background-color: #9ED8DB;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 25px;
+}
+
+.projectsHeader {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.imgur.com/WE9Wji9.jpg?1);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 609px;
+        width: auto;
+        display: flex;
+        margin: 5% 10% 5%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content:center;
+        align-items:center;
+        text-align: center; 
+        overflow:hidden;
+
+}
+
+.projectsHeader h2{
+    background-color: white;
+}
+
+
+
+.itemP {
+    background: url(https://i.imgur.com/2UXbhZv.jpg?1);
+    width: 50%;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0 0 10px;
+
+
+}
+
+.container2 .itemP a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #467599; 
+    box-shadow: inset 0 0 5px;
+
+ 
+}
+
+.container2 .itemP a:hover{
+    color: #467599;
+    text-decoration: none;
+    background-color: #ffffff;  
+}
+.contactContainer{
+    width: auto;
+    display: flex;
+    margin: 5% 10% 5%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    align-items:center;
+    text-align: center; 
+    overflow:hidden;
+}
+.cardB{
+    padding: 35px;
+    width: 100%;
+    border: 4px solid #9ED8DB;
+    box-shadow: inset 0 0 5px;
+    background-color: #E9FFF9;
+
+}
+
+.cardB img{
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+}
+
+.itemC {
+    background-color: #ffffff;
+    width: 50%;
+    overflow: hidden;
+    height: 75px;
+    width: 200px;
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0 0 5px;
+
+}
+
+.container2 .itemC a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #467599; 
+    box-shadow: inset 0 0 5px;
+}
+.container2 .itemC a:hover{
+    color: #467599;
+    text-decoration: none;
+    background-color: #ffffff;
+}     
