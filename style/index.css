@@ -1,1 +1,62 @@
 /* Add CSS styling here */
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.headerDiv {
+    background-color: #9ED8DB;
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 25px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+nav a {
+    background-color: #E9FFF9;
+    width:100px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .item {
+    height: 200px;
+    width: 200px;
+    margin: 25px;
+    background: lightgray
+}
+
+.gallery{
+
+}
+
+.footerDiv{
+    background-color: #9ED8DB;
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerDiv a{
+    background-color: #E9FFF9;
+    width:100px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
