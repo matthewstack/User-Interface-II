@@ -287,3 +287,29 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 
 }
+
+/* Media Queries */
+
+/* Tablets */
+@media(max-width: 800px) {
+
+}
+
+@media(max-width:500px) {
+    .navigation {
+        align-items: center;
+    }
+    nav {
+        flex-direction: column;
+        width: 70%;
+    }
+    .main {
+        justify-content: center;
+    }
+    .left, .right {
+        width: 80%;
+    }    
+    .boxContainer {
+        width: 45%;
+    }
+}
