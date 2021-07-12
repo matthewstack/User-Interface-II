@@ -132,18 +132,21 @@ nav a:hover{
 
 .left, .right{
     width: 46%;
-    height: 35vh;
+    /* height: 35vh; */
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 button {
-    width: 40%;
-    height: 4vh;
+    width: 50%;
+    height: auto;
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     color: #463F3A;
+    padding: 1%;
 }
 
 .rightText{
@@ -167,7 +170,7 @@ footer {
 
 
 #footerButton {
-    width: 25%;
+    width: 35%;
     height: 5vh;
 }
 
@@ -301,8 +304,9 @@ footer {
     }
     nav {
         flex-direction: column;
-        width: 70%;
+        width: 80%;
     }
+
     .main {
         justify-content: center;
     }
@@ -312,12 +316,15 @@ footer {
         height: auto;
     }    
     .rightText{
+        height: auto;
         align-items: center;
         align-content: center;
+        text-align: center;
     }
     .boxContainer {
         width: 45%;
     }
+
     /* About page */
     .aboutMiddle {
         flex-direction: column;
@@ -326,6 +333,7 @@ footer {
     /* Contact page */
     .cardB div {
         width: 75%;
+
     }
     .cardB img{
         width: 50%;
