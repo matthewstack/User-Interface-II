@@ -308,8 +308,26 @@ footer {
     }
     .left, .right {
         width: 80%;
+        padding: 3%;
+        height: auto;
     }    
+    .rightText{
+        align-items: center;
+        align-content: center;
+    }
     .boxContainer {
         width: 45%;
+    }
+    /* About page */
+    .aboutMiddle {
+        flex-direction: column;
+        height: auto;
+    }
+    /* Contact page */
+    .cardB div {
+        width: 75%;
+    }
+    .cardB img{
+        width: 50%;
     }
 }
